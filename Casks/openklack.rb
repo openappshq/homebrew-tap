@@ -4,8 +4,8 @@
 # then it names no release (version 0.0.0, an all-zero digest) and cannot be
 # installed.
 cask "openklack" do
-  version "0.1.0"
-  sha256 "85f190816e9207308f81b9240b34267aed75bb96e2ec638be01f7abf008e3e28"
+  version "0.1.1"
+  sha256 "626a99d1fa0ca2093bc3a7b2ea5666a89d8001aca4191afb572038a22ed8ed32"
 
   url "https://github.com/openappshq/openapps/releases/download/openklack-v#{version}/OpenKlack-#{version}.zip"
   name "OpenKlack"
