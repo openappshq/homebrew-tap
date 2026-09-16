@@ -12,22 +12,22 @@ cask "openklack" do
   desc "Mechanical keyboard sounds for the keyboard you already own"
   homepage "https://openapps.space/openklack/"
 
-  # OpenKlack can update itself (off by default); Homebrew shouldn't fight it.
+  # OpenKlack checks for updates itself; installing is opt-in. Homebrew shouldn’t fight it.
   auto_updates true
   depends_on macos: :sonoma
 
-  # Installed into the user's Applications, so an in-app update never needs
-  # an admin password.
-  app "OpenKlack.app", target: "#{Dir.home}/Applications/OpenKlack.app"
+  # Installed into /Applications like a dragged disk image (Homebrew's
+  # default; `--appdir` overrides it). Admin accounts need no password there.
+  app "OpenKlack.app"
 
   # Signed with the stable OpenApps HQ Release certificate but not notarized:
   # clear the download quarantine so it opens without a Gatekeeper prompt,
   # then start it in the menu bar.
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{Dir.home}/Applications/OpenKlack.app"]
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/OpenKlack.app"]
     system_command "/usr/bin/open",
-                   args: ["#{Dir.home}/Applications/OpenKlack.app"]
+                   args: ["#{appdir}/OpenKlack.app"]
   end
 
   uninstall quit: "com.openklack.desktop"
