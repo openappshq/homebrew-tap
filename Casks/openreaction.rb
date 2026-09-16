@@ -4,8 +4,8 @@
 # then it names no release (version 0.0.0, an all-zero digest) and cannot be
 # installed.
 cask "openreaction" do
-  version "0.1.3"
-  sha256 "7727398b9201338ac141a650394d63a19b87c67d71df3166864660f5e9f768f3"
+  version "0.1.4"
+  sha256 "68e07acf8e7b30b5df06a75ae50c9551b68407ccfa0478ceb7d1a789a0a2d416"
 
   url "https://github.com/openappshq/openapps/releases/download/openreaction-v#{version}/OpenReaction-#{version}.zip"
   name "OpenReaction"
