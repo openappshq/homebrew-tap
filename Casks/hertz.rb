@@ -4,8 +4,8 @@
 # then it names no release (version 0.0.0, an all-zero digest) and cannot be
 # installed.
 cask "hertz" do
-  version "0.1.0"
-  sha256 "37020789e9f642654b34f4aabaf3ac6e0b926da8af8401cd4ff7e1dd51552472"
+  version "0.1.1"
+  sha256 "6323a8278365a08c3fe1303f5fe6251eade140248487f683c345b9a4f5052246"
 
   url "https://github.com/openappshq/openapps/releases/download/hertz-v#{version}/Hertz-#{version}.zip"
   name "Hertz"
