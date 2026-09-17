@@ -4,8 +4,8 @@
 # then it names no release (version 0.0.0, an all-zero digest) and cannot be
 # installed.
 cask "macpaper" do
-  version "0.2.0"
-  sha256 "2d6d4c8d24e41c4258abf9111828b68c99c2e2926b4377f509181f0525d23a80"
+  version "0.2.1"
+  sha256 "6da751dfe19f209b13a3cdd2a5de38a8d2f188995f68a2632368be2477016a5f"
 
   url "https://github.com/openappshq/openapps/releases/download/macpaper-v#{version}/macPaper-#{version}.zip"
   name "macPaper"
