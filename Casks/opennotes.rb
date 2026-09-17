@@ -4,8 +4,8 @@
 # then it names no release (version 0.0.0, an all-zero digest) and cannot be
 # installed.
 cask "opennotes" do
-  version "0.1.0"
-  sha256 "f5835ec06deb903b276eabe7f1d222de9c8e4bc721c3613451151adbab494959"
+  version "0.1.1"
+  sha256 "065cd7f3b435f537603f2ef8c1b3c0154e79b8c2f8e9aff6db2b3b090c0a979e"
 
   url "https://github.com/openappshq/openapps/releases/download/opennotes-v#{version}/OpenNotes-#{version}.zip"
   name "OpenNotes"
