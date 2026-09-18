@@ -4,12 +4,12 @@
 # then it names no release (version 0.0.0, an all-zero digest) and cannot be
 # installed.
 cask "macpaper" do
-  version "0.2.1"
-  sha256 "6da751dfe19f209b13a3cdd2a5de38a8d2f188995f68a2632368be2477016a5f"
+  version "0.2.2"
+  sha256 "d8523e6655e8c0378ce56f306b8f68d197ed1f562f47663d85667adbc953a3ba"
 
   url "https://github.com/openappshq/openapps/releases/download/macpaper-v#{version}/macPaper-#{version}.zip"
   name "macPaper"
-  desc "Wallpapers your Mac makes itself, from the notch"
+  desc "Wallpapers your Mac makes itself, from the menu bar"
   homepage "https://openapps.space/macpaper/"
 
   # macPaper checks for updates itself; installing is opt-in. Homebrew shouldn’t fight it.
